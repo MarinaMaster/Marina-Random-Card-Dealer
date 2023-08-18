@@ -46,7 +46,8 @@ window.onload = function() {
     list();
   }, 10000);
 
-  function weightConverter(valNum) {
-    document.getElementById("inputWeight").innerHTML = valNum;
+  inputWeight.oninput = change;
+  function change() {
+    container.style.width = this.value + "px";
   }
 };

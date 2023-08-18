@@ -29,13 +29,16 @@
     <div class="footer">
       <button onClick="list()" class="button">Click</button>
       <div class="timer">00:00</div>
-      <input
-        id="inputWeight"
-        type="number"
-        placeholder="Weight"
-        oninput="weightConverter(this.value)"
-        onchange="weightConverter(this.value)"
-      />
+      <div>
+        <input
+          id="inputWeight"
+          type="range"
+          min="390"
+          max="480"
+          step="5"
+          onchange="weightConverter(this.value)"
+        />
+      </div>
     </div>
     <script type="text/javascript" src="./app.js"></script>
   </body>

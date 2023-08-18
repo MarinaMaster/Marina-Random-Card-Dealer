@@ -70,6 +70,10 @@ body {
   font-size: 30px;
 }
 
+label {
+  margin-left: 2rem;
+  font-size: large;
+}
 #inputWeight {
   width: 150px;
   height: 50px;
